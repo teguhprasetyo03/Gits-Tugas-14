@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_bg_item_course"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#8086FF"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_name_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="start"
+                android:text="Physics"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_chapter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name_course"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="start"
+                android:text="Chapter 3 : Force"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_instructor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_chapter"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/avatar1"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="start"
+                android:text="Jessica Lambert"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_media"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_instructor"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:drawableStart="@drawable/hangouts_meet"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="start"
+                android:text="Google Meet"
+                android:layout_marginBottom="24dp"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
