@@ -2,4 +2,12 @@
     <string name="app_name">Tugas14</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="geo_desc">Geography is the spatial study of the earth\'s physical and cultural environments. Geographers study the earth\'s physical characteristics, its inhabitants and cultures, phenomena such as climate, and the earth\'s place within the universe.</string>
+    <string name="title_geo">Geography</string>
+    <string name="title_chem">Chemistry</string>
+    <string name="title_math">Mathematics</string>
+    <string name="title_py">Physics</string>
+    <string name="py_desc">Physics encompasses the study of the universe from the largest galaxies to the smallest subatomic particles. Moreover, it\'s the basis of many other sciences, including chemistry, oceanography, seismology, and astronomy (and can be applied to biology or medical science).</string>
+    <string name="math_desc">Mathematics is the study of quantity, structure, space and change. As abstract as that may seem, math is, at its core, a quest for absolutes, definitive solutions and answers.</string>
+    <string name="chem_desc">Chemistry is the branch of science that deals with the properties, composition, and structure of elements and compounds, how they can change, and the energy that is released or absorbed when they change.</string>
 </resources>

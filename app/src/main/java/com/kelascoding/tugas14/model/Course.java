@@ -2,8 +2,6 @@ package com.kelascoding.tugas14.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
-
 public class Course {
 
 	@SerializedName("chapter")

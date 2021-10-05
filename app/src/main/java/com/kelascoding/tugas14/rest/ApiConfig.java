@@ -9,7 +9,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiConfig {
-    private static final String BASE_URL = "http://192.168.1.5:8888/tugas14api/course/";
+    private static final String BASE_URL = "https://restapitugas14.000webhostapp.com/";
 
     public static ApiService getApiService() {
         HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
@@ -18,11 +18,13 @@ public class ApiConfig {
                 .addInterceptor(httpLoggingInterceptor)
                 .build();
 
-        // Gson gson = new GsonBuilder().setLenient().create();
+        Gson gson = new GsonBuilder()
+                .setLenient()
+                .create();
 
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create(gson))
                 .client(okHttpClient)
                 .build();
         return retrofit.create(ApiService.class);

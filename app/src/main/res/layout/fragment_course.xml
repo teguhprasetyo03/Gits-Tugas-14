@@ -18,114 +18,115 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="vertical"
                 android:layout_margin="16dp"
-                tools:context=".ui.activity.MainActivity">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:orientation="vertical"
                 tools:context=".ui.activity.MainActivity">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/montserrat"
-                    android:text="25 September"
-                    android:textAlignment="viewStart"
-                    android:textColor="#9E9EA0"
-                    android:textSize="14sp" />
+                    android:orientation="vertical"
+                    tools:context=".ui.activity.MainActivity">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/montserrat_bold"
-                    android:text="Today"
-                    android:textColor="#000000"
-                    android:textAlignment="viewStart"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="25 September"
+                        android:textAlignment="viewStart"
+                        android:textColor="#9E9EA0"
+                        android:textSize="14sp" />
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_add"
-                    android:layout_marginTop="-55dp"
-                    android:layout_width="180dp"
-                    android:layout_height="50dp"
-                    android:textColor="#fff"
-                    android:layout_gravity="end"
-                    android:drawablePadding="16dp"
-                    android:drawableLeft="@drawable/ic_baseline_add_24"
-                    android:background="@drawable/bg_button_login"
-                    android:textAllCaps="false"
-                    android:textSize="20sp"
-                    android:text="Add Course"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_bold"
+                        android:text="Today"
+                        android:textAlignment="viewStart"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-            </LinearLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_add"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="-55dp"
+                        android:background="@drawable/bg_button_login"
+                        android:drawableLeft="@drawable/ic_baseline_add_24"
+                        android:drawablePadding="16dp"
+                        android:text="Add Course"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/montserrat"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/edtName"
-                    android:layout_marginTop="16dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name Course"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    android:layout_marginTop="16dp"
+                    android:hint="Name Course">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        />
+                        android:fontFamily="@font/montserrat" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/edtChapter"
-                    android:layout_marginTop="16dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Chapter"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    android:layout_marginTop="16dp"
+                    android:hint="Chapter">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        />
+                        android:fontFamily="@font/montserrat" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/edtInstructor"
-                    android:layout_marginTop="16dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Instructor"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    android:layout_marginTop="16dp"
+                    android:hint="Instructor">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        />
+                        android:fontFamily="@font/montserrat"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/edtMedia"
-                    android:layout_marginTop="10dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:hint="Media"
-                    app:endIconMode="custom"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    app:endIconMode="custom">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        />
+                        android:fontFamily="@font/montserrat"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
-
 
 
             </LinearLayout>

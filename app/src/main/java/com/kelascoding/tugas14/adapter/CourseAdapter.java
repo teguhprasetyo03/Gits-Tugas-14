@@ -10,9 +10,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.kelascoding.tugas14.ui.activity.DetailActivity;
 import com.kelascoding.tugas14.R;
 import com.kelascoding.tugas14.model.Course;
+import com.kelascoding.tugas14.ui.activity.DetailActivity;
 
 import java.util.List;
 

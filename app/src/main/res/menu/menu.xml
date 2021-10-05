@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
     <item
@@ -12,5 +11,10 @@
         android:id="@+id/idCourse"
         android:icon="@drawable/course_selector"
         android:title="Course" />
+
+    <item
+        android:id="@+id/idProfile"
+        android:icon="@drawable/user_selector"
+        android:title="Profile" />
 
 </menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_onboard"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/geo"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_title_onboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/playfair_display"
+        android:text="Geography"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_desc_onboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Geography is the spatial study of the earth's physical and cultural environments. Geographers study the earth's physical characteristics, its inhabitants and cultures, phenomena such as climate, and the earth's place within the universe."
+        android:textAlignment="center"
+        android:textColor="#787474"
+        android:textSize="14sp"
+        tools:ignore="MissingConstraints"
+
+        />
+
+</LinearLayout>

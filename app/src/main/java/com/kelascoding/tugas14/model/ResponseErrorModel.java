@@ -2,8 +2,6 @@ package com.kelascoding.tugas14.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
-
 public class ResponseErrorModel {
     @SerializedName("error_msg")
     private String errorMsg;
