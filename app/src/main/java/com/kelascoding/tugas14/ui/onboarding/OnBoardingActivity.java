@@ -14,6 +14,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.kelascoding.tugas14.R;
 import com.kelascoding.tugas14.ui.login.activity.Login;
+import com.kelascoding.tugas14.ui.login.sharedprefrences.SharedPref;
 
 public class OnBoardingActivity extends AppCompatActivity {
 
@@ -24,6 +25,7 @@ public class OnBoardingActivity extends AppCompatActivity {
     TextView[] dots;
     ViewPagerAdapter viewPagerAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +34,7 @@ public class OnBoardingActivity extends AppCompatActivity {
         btnBack = findViewById(R.id.btn_back);
         btnNext = findViewById(R.id.btn_next);
         btnSkip = findViewById(R.id.btn_skip);
+
 
         btnSkip.setOnClickListener(v -> {
             Intent i = new Intent(OnBoardingActivity.this, Login.class);
@@ -55,6 +58,11 @@ public class OnBoardingActivity extends AppCompatActivity {
                 viewPager.setCurrentItem(getItem(-1), true);
             }
         });
+
+        if (SharedPref.getInstance(this).isLoggedUsername()){
+            finishAffinity();
+            startActivity(new Intent(this, Login.class));
+        }
 
         viewPager = findViewById(R.id.sliderViewPager);
         linearLayout = findViewById(R.id.indicator_layout);

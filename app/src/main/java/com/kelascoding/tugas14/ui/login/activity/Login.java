@@ -44,6 +44,12 @@ public class Login extends AppCompatActivity {
         btnLogin = findViewById(R.id.btn_login);
         tvSignUp = findViewById(R.id.tvSignUp);
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+
+
+        if (SharedPref.getInstance(this).isLoggedUsername()){
+            finishAffinity();
+            startActivity(new Intent(this, MainActivity.class));
+        }
         btnLogin.setOnClickListener(view -> {
 
             validateUserData();
